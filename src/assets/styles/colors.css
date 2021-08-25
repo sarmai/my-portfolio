@@ -1,0 +1,32 @@
+:root {
+    --bg-dark: #0E1212;
+    --bg-light: #1D2525;
+    --light-grey: #DBDBDB;
+    --dark-grey: #808080;
+    --primary: #F4ABC4;
+    --accent: #C0FCF7;
+}
+
+.bg-dark {
+    background-color: var(--bg-dark);
+}
+
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+.color-light-grey {
+    color: var(--light-grey);
+}
+
+.color-dark-grey {
+    color: var(--dark-grey);
+}
+
+.color-primary {
+    color: var(--primary);
+}
+
+.color-accent {
+    color: var(--accent);
+}
