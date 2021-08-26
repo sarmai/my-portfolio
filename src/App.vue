@@ -1,15 +1,32 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <NumberLine />
+    <NavbarMobile />
+    <router-view />
   </div>
 </template>
 
+<script>
+import NavbarMobile from "./components/NavbarMobile.vue";
+import NumberLine from "./components/NumberLine.vue";
+
+export default {
+  name: "App",
+  components: {
+    NavbarMobile,
+    NumberLine,
+  },
+};
+</script>
+
+
 <style>
 #app {
+  overflow: hidden;
+  position: relative;
+}
+
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,5 +45,5 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
-}
+} */
 </style>

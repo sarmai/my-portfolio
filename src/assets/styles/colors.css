@@ -15,6 +15,14 @@
     background-color: var(--bg-light);
 }
 
+.color-dark {
+    color: var(--bg-dark);
+}
+
+.color-light {
+    color: var(--bg-light);
+}
+
 .color-light-grey {
     color: var(--light-grey);
 }

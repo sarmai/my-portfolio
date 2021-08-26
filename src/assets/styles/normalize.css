@@ -51,6 +51,17 @@ h1 {
 }
 
 
+/**
+   * Remove margin and padding from the lists 
+   */
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* Grouping content
      ========================================================================== */
 

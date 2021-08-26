@@ -12,3 +12,20 @@ body {
 .navbar {
     list-style: none;
 }
+
+
+/* || TYPOGRAPHY */
+
+.font-primary {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.title {
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+.body {
+    line-height: 145.38%;
+    letter-spacing: 0.01em;
+}
