@@ -9,23 +9,60 @@ body {
     background-color: var(--bg-dark);
 }
 
-.navbar {
-    list-style: none;
+
+/* || Layout */
+
+.wrapper {
+    margin-left: 60px;
+    margin-right: 20px;
+}
+
+.hero {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.body {
+    margin-left: 20px;
 }
 
 
 /* || TYPOGRAPHY */
 
-.font-primary {
-    font-family: 'Roboto Mono', monospace;
-}
-
-.title {
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
     font-weight: 500;
     letter-spacing: 0.01em;
+    line-height: 145.38%;
 }
 
-.body {
-    line-height: 145.38%;
-    letter-spacing: 0.01em;
+.font-size-reg {
+    font-size: 16px;
+}
+
+.font-size-md {
+    font-size: 18px;
+}
+
+.font-size-lg {
+    font-size: 26px;
+}
+
+
+/* || Components */
+
+.navbar {
+    list-style: none;
+}
+
+.img {
+    max-width: 100%;
 }

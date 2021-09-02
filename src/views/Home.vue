@@ -1,60 +1,35 @@
 <template>
-  <div class="color-light-grey">
-    <Hello />
-    <section class="p-1" id="about">
-      <h1 class="color-primary | title">About</h1>
-      <p class="body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-        inventore officia quis expedita voluptas, dignissimos iusto ab
-        asperiores magni, pariatur ut culpa iure magnam ad nemo eos autem vitae
-        at quasi numquam ex cupiditate quae. Facere neque quod blanditiis! A
-        libero repudiandae ducimus quidem. At ducimus facere quia facilis
-        tempora.
-      </p>
-    </section>
-    <section class="p-1" id="works">
-      <h1 class="color-primary | title">Works</h1>
-      <p class="body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-        inventore officia quis expedita voluptas, dignissimos iusto ab
-        asperiores magni, pariatur ut culpa iure magnam ad nemo eos autem vitae
-        at quasi numquam ex cupiditate quae. Facere neque quod blanditiis! A
-        libero repudiandae ducimus quidem. At ducimus facere quia facilis
-        tempora.
-      </p>
-    </section>
-    <section class="p-1" id="skills">
-      <h1 class="color-primary | title">Skills</h1>
-      <p class="body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-        inventore officia quis expedita voluptas, dignissimos iusto ab
-        asperiores magni, pariatur ut culpa iure magnam ad nemo eos autem vitae
-        at quasi numquam ex cupiditate quae. Facere neque quod blanditiis! A
-        libero repudiandae ducimus quidem. At ducimus facere quia facilis
-        tempora.
-      </p>
-    </section>
-    <section class="p-1" id="contact">
-      <h1 class="color-primary | title">Contact</h1>
-      <p class="body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-        inventore officia quis expedita voluptas, dignissimos iusto ab
-        asperiores magni, pariatur ut culpa iure magnam ad nemo eos autem vitae
-        at quasi numquam ex cupiditate quae. Facere neque quod blanditiis! A
-        libero repudiandae ducimus quidem. At ducimus facere quia facilis
-        tempora.
-      </p>
-    </section>
+  <div class="wrapper | color-light-grey">
+    <Hello id="hello" />
+    <br />
+    <About id="about" />
+    <br />
+    <Works id="works" />
+    <br />
+    <Skills id="skills" />
+    <br />
+    <Contact id="contact" />
   </div>
 </template>
 
 <script>
 import Hello from "@/components/Hello.vue";
+import About from "@/components/About.vue";
+import Works from "@/components/Works.vue";
+import Skills from "@/components/Skills.vue";
+import Contact from "@/components/Contact.vue";
 
 export default {
   name: "Home",
   components: {
     Hello,
+    About,
+    Works,
+    Skills,
+    Contact,
   },
 };
 </script>
+
+<style scoped>
+</style>

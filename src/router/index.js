@@ -17,17 +17,24 @@ const routes = [{
         // which is lazy-loaded when the route is visited.
         component: () =>
             import ( /* webpackChunkName: "about" */ '../views/About.vue')
+    },
+    {
+        path: '*',
+        name: 'NotFound',
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../views/NotFound.vue')
     }
 ]
 
 const router = new VueRouter({
     routes,
-    scrollBehavior(to) {
+    scrollBehavior(to, from, savedPosition) {
         if (to.hash) {
-            return {
-                selector: to.hash,
-                behavior: 'smooth',
-            }
+            return { selector: to.hash }
+        } else if (savedPosition) {
+            return savedPosition;
+        } else {
+            return { x: 0, y: 0 }
         }
     }
 })

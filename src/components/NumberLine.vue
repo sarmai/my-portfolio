@@ -1,7 +1,7 @@
 <template>
-  <div class="body | number-line">
+  <div class="font-size-lg | number-line">
     <div v-for="n in numbers" :key="n" class="color-light">
-      <span>{{ n }}</span>
+      <p>{{ n }}</p>
     </div>
   </div>
 </template>
@@ -20,7 +20,7 @@ export default {
 <style scoped>
 .number-line {
   position: absolute;
-  transform: translate(10px, -100px);
+  transform: translate(10px, -120px);
   cursor: default;
 }
 </style>
